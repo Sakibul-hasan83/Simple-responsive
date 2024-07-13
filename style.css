@@ -26,3 +26,20 @@ img{
     grid-template-columns: repeat(2,1fr);
     gap:5px;
 }
+
+@media screen And (max-width:576px){
+
+.row{
+
+    flex-direction: column;
+    height: auto;
+}
+.tiger{
+
+    grid-template-columns: 1fr;
+}
+
+
+}
+    
+

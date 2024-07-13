@@ -1,0 +1,27 @@
+.box{
+
+   
+    border: 3px solid green;
+    padding:10px;
+  
+    margin: 10px;
+    background-color: rgb(176, 211, 143);
+
+
+}
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    ;
+    grid-template-rows: repeat(3,200px)50px 50px;
+}
+#part-1{
+
+    grid-row: span 5;
+}
+#part-11 , #part-12{
+
+    grid-column: span 3;;
+}
+
