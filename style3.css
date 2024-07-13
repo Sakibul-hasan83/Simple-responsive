@@ -1,0 +1,51 @@
+.header,.main,.nav,.sidebar,.advertice,.footer{
+
+    background: #f7d2d2;
+    border: 3px solid goldenrod;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.header{
+
+    grid-area:header ;
+}
+.main{
+
+    grid-area:main ;
+}
+.nav{
+    grid-area: ;
+}
+
+.sidebar{
+
+    grid-area: sidebar;
+}
+.advertice{
+    grid-area:advertice;
+}
+.footer{
+    grid-area:footer;
+}
+
+.body{
+gap: 20px;
+    display: grid;
+    grid-template-areas: "header   header   header   header "
+                         "nav       main     main     sidebar" 
+                         "nav       main     main     advertice"    
+                         "footer    footer    footer   footer"                               ;
+}
+@media screen and (max-width:576px)
+{
+   .body{
+    grid-template-areas: "header"
+                           "nav"
+                            "main"
+                            "aside"
+                            "footer"
+                          ;
+   }
+}
+    
